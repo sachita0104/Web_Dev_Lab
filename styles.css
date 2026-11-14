@@ -89,9 +89,9 @@ header nav ul {
 }
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;                
-    gap: var(--spacing-lg);        
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
 
@@ -157,4 +157,10 @@ footer a {
 @media (min-width: 768px) {
     .footer-left { text-align: left; }
     .footer-right { text-align: right; }
+}
+
+@media (min-width: 768px) {
+    .project-card.featured {
+        grid-column: span 2;
+    }
 }

@@ -1,5 +1,3 @@
-/* P11: Newspaper-style Three-Column Layout */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,12 +25,10 @@ body {
     letter-spacing: 2px;
 }
 
-/* The Grid Layout */
 .newspaper-grid {
     display: grid;
-    /* This creates 3 columns: 2 parts, 1 part, 1 part */
     grid-template-columns: 2fr 1fr 1fr; 
-    gap: 20px; /* Space between columns */
+    gap: 20px; 
 }
 
 .main-story {
@@ -83,10 +79,9 @@ body {
     line-height: 1.5;
 }
 
-/* Responsive adjustment for small screens */
 @media (max-width: 768px) {
     .newspaper-grid {
-        grid-template-columns: 1fr; /* Stacks everything in 1 column */
+        grid-template-columns: 1fr; 
     }
     
     .main-story, .secondary-stories {
