@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Semantic Bio</title>
+    <title>My Web Dev Portfolio</title>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Bio</h1>
+        <div class="logo">MyPortfolio</div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <article>
-                <p>Hello! My name is Sachita Toragal. I am currently learning Web Development. I enjoy building things for the web and learning how to use Git and GitHub.</p>
-            </article>
+            <h1>Hi, I'm Sachita</h1>
+            <p>I am a web development student building responsive and semantic websites.</p>
         </section>
 
-        <section id="hobbies">
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Reading</li>
-                <li>Coding</li>
-                <li>Drawing</li>
-            </ul>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- P9: Responsive navbar and card grid using Flexbox -->
+            <div class="project-grid">
+            <article class="project-card">
+                <h3>Project 1: Semantic Bio</h3>
+                <p>A simple bio page built with semantic HTML tags.</p>
+                <a href="P5_Semantic_Bio/index.html">View Project</a>
+            </article>
+
+            <article class="project-card">
+                <h3>Project 2: Portfolio Structure</h3>
+                <p>The skeleton of this very portfolio page.</p>
+            </article>
+            <!-- P8: Card with Overlay -->
+            <article class="project-card overlay-card">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=Project+Image" alt="Project Placeholder">
+    
+                    <div class="card-overlay">
+                        <h3>Overlay Project Title</h3>
+                        <p>This text is positioned over the image.</p>
+                    </div>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Sachita. Built for Web Dev Lab.</p>
+        <div class="footer-left">
+            <p>&copy; 2026 Sachita. All rights reserved.</p>
+        </div>
+        <div class="footer-center">
+            <p>Built for Web Dev Lab</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a>
+        </div>
     </footer>
 
 </body>
