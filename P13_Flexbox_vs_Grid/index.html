@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P13 - Flexbox vs Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Flexbox vs. CSS Grid</h1>
+        <p>Choosing the right layout system for the job.</p>
+    </header>
+
+    <main>
+        <section class="demo-section">
+            <h2>1. Flexbox (1-Dimensional Layout)</h2>
+            <p><strong>Use Case:</strong> Best for aligning items in a single row or column (like a navigation bar, or a set of buttons).</p>
+            
+            <div class="flexbox-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <section class="demo-section">
+            <h2>2. CSS Grid (2-Dimensional Layout)</h2>
+            <p><strong>Use Case:</strong> Best for defining entire page structures where you need to control both rows and columns simultaneously (like a photo gallery, or our portfolio projects).</p>
+            
+            <div class="grid-container">
+                <div class="grid-item">Header (Spans 2 cols)</div>
+                <div class="grid-item">Sidebar</div>
+                <div class="grid-item">Main Content</div>
+                <div class="grid-item">Footer (Spans 2 cols)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Conclusion: Use Flexbox for content flow (1D) and Grid for layout structure (2D). They are best friends, not rivals!</p>
+    </footer>
+
+</body>
+</html>
